@@ -1,7 +1,5 @@
 import WordCloud
-import matplotlib.pyplot as plt
-import os
-from flask import Flask, request, jsonify, send_file, send_from_directory
+from flask import Flask, request
 
 """DIRETORIO = "/home/luiz/Dropbox\
             /ufopa/8 semestre/Sistemas_distribuídos/\

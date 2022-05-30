@@ -1,4 +1,4 @@
-from wordcloud import WordCloud, STOPWORDS, ImageColorGenerator
+from wordcloud import WordCloud, STOPWORDS
 import Preprocessing
 
 #path_file = 'Attraction_Alter.csv'

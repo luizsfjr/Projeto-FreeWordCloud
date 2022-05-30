@@ -1,7 +1,5 @@
-from crypt import methods
 from flask.globals import request
 from flask import Flask, render_template
-from itsdangerous import exc
 import requests
 from cairosvg import svg2png
 

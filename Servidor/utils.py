@@ -2,7 +2,6 @@ import unicodedata
 import re
 from nltk.corpus import stopwords
 import nltk
-from sklearn.feature_extraction.text import CountVectorizer
 nltk.download('stopwords')
 
 #Tokenizer
