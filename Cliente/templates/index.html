@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>FreeWordCloud</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css')}}">
+</head>
+<body>
+    
+    <div class="container" border-radius="0px"> 
+            <form action="gerar" method="POST">
+                <textarea
+                class="texto" placeholder="Digite aqui seu texto" name="texto" type="text" 
+                wrap="hard" style="text-align: center"></textarea>
+                <button class="button-up" type="submit" nome="gerar">Gerar WordCloud</button>
+            </form>
+    </div>
+    <div class="teste" border-radiux="0px">
+        <form action="baixar" method="POST">
+            <a href="./static/images/wordcloud.png" download>Baixar WordCloud</a>
+        </form>
+    </div>
+    <img class="img" src="{{ url_for('static', filename='images/wordcloud.png')}}">
+</body>
+
+</html>
+
