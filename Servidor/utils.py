@@ -1,15 +1,9 @@
-import pandas as pd
 import unicodedata
-import os
-import warnings
 import re
-import utils
-
 from nltk.corpus import stopwords
-from nltk.tokenize import word_tokenize
 import nltk
-nltk.download('stopwords')
 from sklearn.feature_extraction.text import CountVectorizer
+nltk.download('stopwords')
 
 #Tokenizer
 def tokenize(text):
