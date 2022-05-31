@@ -37,25 +37,32 @@ $ pip install -r requirements.txt
 ```bash
 
 # Acesse a pasta do projeto no terminal/cmd
+$ cd Projeto-FreeWordCloud
+
+# Acesse a pasta do Servidor no terminal/cmd
 $ cd Servidor
 
 # Execute o servidor
 $ python3 -u main.py
 
-#  inciará na porta:5000 - acesse <http://localhost:5000>
+# A parte do servidor inciará na porta:5000
 ```
 
 #### Rodando o Cliente
 
 ```bash
+
 # Acesse a pasta do projeto no terminal/cmd
+$ cd Projeto-FreeWordCloud
+
+# Acesse a pasta do Cliente no terminal/cmd
 $ cd Cliente
 
 # Execute o cliente
 $ python3 -u main.py
 
 
-# A parte do cliente inciará na porta:8000 - acesse <http://localhost:8000> 
+# A parte do cliente inciará na porta:8000 - acesse <http://127.0.0.1:8000> 
 ```
 ### Arquivos
   #### Cliente
