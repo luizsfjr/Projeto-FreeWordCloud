@@ -1,24 +1,9 @@
-.texto{
-    box-sizing: border-box;
-
-    position: absolute;
-    width: 694px;
-    height: 362px;
-    left: 13px;
-    top: 369px;
-    
-    background: #FFFFFF;
-    border: 1px solid #000000;
-    border-radius: 20px;    
+body{
+    margin: 0px;
+    overflow-y: hidden
 }
 
-h1{
-    position: absolute;
-    width: 479px;
-    height: 115px;
-    left: 507px;
-    top: 202px;
-    
+h1{ 
     font-family: 'Maitree';
     font-style: normal;
     font-weight: 400;
@@ -30,14 +15,54 @@ h1{
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-.button-up{
-    box-sizing: border-box;
+.container{
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(to left, #105C5C 50%, #00FF75 50%);
+}
 
-    position: absolute;
+.titulo{
+    display: flex;
+    justify-content: center;
+}
+
+.box{
+    display: flex;
+    height: 100vh;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.left-texto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mb{
+    margin-bottom: 1em;
+}
+
+.left{
+    display: flex;
+    align-items: center;    
+}
+
+.texto{
+    width: 450px;
+    height: 280px;
+    
+    background: #FFFFFF;
+    border: 1px solid #000000;
+    border-radius: 20px;    
+}
+
+.button-up{
+
     width: 282px;
     height: 88px;
-    left: 197px;
-    top: 783px;
+    cursor: pointer;
 
     font-family: 'Maitree';
     font-style: normal;
@@ -55,42 +80,50 @@ h1{
     background: #00FF75;
 }
 
-body {
-    margin: 0px;
+.button-down{
+    width: 282px;
+    height: 88px;
+    cursor: pointer;
+
+    font-family: 'Maitree';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 53px;
+    color:#00FF75;
+
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    border: 3px solid #FFFAFA;
+    border-radius: 30px;   
 }
 
-.container{
-    position: absolute;
-    width: 720px;
-    height: 1024px;
-    left: 0px;
-    top: 0px;
+.button-down:hover {
+    color: #fff;
     background: #00FF75;
 }
 
-.teste{
-    position: absolute;
-    width: 720px;
-    height: 1024px;
-    left: 720px;
-    top: 0px;
-    background: #105C5C;
+.right{
+    display: flex;
+    align-items: center;    
+}
+
+.right-down{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .img {
-    position: absolute;
-    width: 646px;
-    height: 331px;
-    left: 760px;
-    top: 384px;    
+    width: 500px;
+    height: 254px; 
 }
 
 a{
-    position: absolute;
-    width: 282px;
     height: 88px;
-    left: 300px;
-    top: 830px;
     color: #FFF2F2;
 }
 

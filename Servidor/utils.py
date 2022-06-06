@@ -8,9 +8,6 @@ nltk.download('stopwords')
 def tokenize(text):
     return text.split()
 
-# Stopwords
-#with open('stopPort.txt') as f:
-#    stopwords_pt = f.read().split('\n')
 nltk_stop = set(stopwords.words('portuguese'))
 
 def remove_stop_words(text, stopWords):

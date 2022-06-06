@@ -1,25 +1,48 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-BR">
 <head>
-<title>FreeWordCloud</title>
-<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css')}}">
+    <title>FreeWordCloud</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css')}}">
 </head>
 <body>
+    <div class="container">
+        <div class="titulo">
+            <h1>FreeWordCloud</h1>
+        </div>
+        <div class="box">
+            <div class="left" border-radius="0px">
+                <form action="gerar" method="POST">
+                    <div class="cor mb" >
+                        <label for="account" class="form__label">Background:</label>
+                        <select name="cor">
+                        <option value="black">Preto</option>
+                        <option value="blue">Azul</option>
+                        <option value="white">Branco</option>
+                        <option value="red">Vermelho</option>
+                        <option value="yellow">Amarelo</option>
+                        <option value="green">Verde</option>
+                        </select>
+                    </div>
+                    <div class="left-texto">
+                        <textarea class="texto mb" placeholder="Digite aqui seu texto" type="text" name="texto" style="text-align: center"></textarea>
+                        <button class="button-up" type="submit" nome="gerar">Gerar WordCloud</button>
+                    </div>
+                </form>
+            </div>
+            <div class="right" border-radiux="0px">
+                <div class="right-down">
+                    <img class="img mb" src="{{ url_for('static', filename='images/wordcloud.png')}}">
+                    <a class="button-down" href="./static/images/wordcloud.png" download>Baixar WordCloud</a>
+                </div>
+                
+            </div>
+        </div>
+    </div>
     
-    <div class="container" border-radius="0px"> 
-            <form action="gerar" method="POST">
-                <textarea
-                class="texto" placeholder="Digite aqui seu texto" name="texto" type="text" 
-                wrap="hard" style="text-align: center"></textarea>
-                <button class="button-up" type="submit" nome="gerar">Gerar WordCloud</button>
-            </form>
-    </div>
-    <div class="teste" border-radiux="0px">
-        <form action="baixar" method="POST">
-            <a href="./static/images/wordcloud.png" download>Baixar WordCloud</a>
-        </form>
-    </div>
-    <img class="img" src="{{ url_for('static', filename='images/wordcloud.png')}}">
+    
+
 </body>
 
 </html>
