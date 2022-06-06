@@ -1,4 +1,5 @@
 # Projeto-FreeWordCloud
+<<<<<<< HEAD
 ## Descrição do Projeto
 <p align="center">Projeto desenvolvido para a disciplina de Sistemas Distribuídos. O projeto se baseia num sistema distribuído de arquitetura cliente-servidor, de modo que este objetiva possibilitar aos seus usários a criação de nuvens de palavras de maneira ágil e rápida a partir de um texto.</p>
 
@@ -102,3 +103,7 @@ As seguintes ferramentas foram usadas na construção do projeto:
 
 
 
+=======
+
+## Siga para a branch master para ver as últimas atualizações!
+>>>>>>> 0fc125be580abfeb0ed02b4e9286ce2b07a59263
