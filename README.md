@@ -25,7 +25,6 @@ Antes de tudo, clone este repositório e instale as dependências com:
 ```bash
 #Clone o repositório
 $ git clone <https://github.com/luizsfjr/Projeto-FreeWordCloud>
-
 # Instale as dependências
 $ pip install -r requirements.txt
 ```
@@ -34,33 +33,24 @@ $ pip install -r requirements.txt
 #### Rodando o Servidor
 
 ```bash
-
 # Acesse a pasta do projeto no terminal/cmd
 $ cd Projeto-FreeWordCloud
-
 # Acesse a pasta do Servidor no terminal/cmd
 $ cd Servidor
-
 # Execute o servidor
 $ python3 -u main.py
-
 # A parte do servidor inciará na porta:5000
 ```
 
 #### Rodando o Cliente
 
 ```bash
-
 # Acesse a pasta do projeto no terminal/cmd
 $ cd Projeto-FreeWordCloud
-
 # Acesse a pasta do Cliente no terminal/cmd
 $ cd Cliente
-
 # Execute o cliente
 $ python3 -u main.py
-
-
 # A parte do cliente inciará na porta:8000 - acesse <http://127.0.0.1:8000> 
 ```
 ### Arquivos
@@ -92,7 +82,7 @@ As seguintes ferramentas foram usadas na construção do projeto:
 ## Funcionalidades implementadas
   - Módulos de pré-processamento
   - Geração da nuvem de palavras
-  - Front end simples mas funcional
+  - Aplicação cliente 95% pronta
   - Download da nuvem de palavras
 ## Funcionalidades futuras
-  - Opções de estilização da nuvem de palavras, como background, fonte etc.
+  - Opções de estilização da nuvem de palavras como, fonte, tema etc.
