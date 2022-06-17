@@ -1,5 +1,5 @@
 ## Descrição do Projeto
-<p align="center">Projeto desenvolvido para a disciplina de Sistemas Distribuídos. O projeto se baseia num sistema distribuído de arquitetura cliente-servidor, de modo que este objetiva possibilitar aos seus usários a criação de nuvens de palavras de maneira ágil e rápida a partir de um texto.</p>
+<p>Projeto desenvolvido para a disciplina de Sistemas Distribuídos. O projeto se baseia num sistema distribuído de arquitetura cliente-servidor, de modo que este objetiva possibilitar aos seus usários a criação de nuvens de palavras de maneira ágil e rápida a partir de um texto.</p>
 
 Tabela de conteúdos
 =================
