@@ -7,7 +7,12 @@ api = Flask(__name__)
 def get_wordcloud():
     text = request.args.get('text')
     color = request.args.get('cor')
-    svg_img = WordCloud.make_wordcloud(text, color).to_svg()
+    tema = request.args.get('tema')
+    try:
+        svg_img = WordCloud.make_wordcloud(text, color, tema).to_svg()
+    except(ValueError):
+        return "Texto deve possuir ao menos uma palavra"
+
     return svg_img
 
 if __name__ == "__main__":

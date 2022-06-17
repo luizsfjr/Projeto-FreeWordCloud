@@ -5,7 +5,7 @@ from cairosvg import svg2png
 
 
 api = Flask(__name__)
-link = "http://127.0.0.1:5000/wordcloud?text="
+link = "http://127.0.0.1:5000/wordcloud"
 
 @api.route("/")
 def home():
@@ -13,14 +13,15 @@ def home():
 
 @api.route("/gerar", methods = ["GET", "POST"])
 def gerar():
-    text = request.form["texto"]
+    text = "?text="+request.form["texto"]
     cor = "&cor="+request.form["cor"]
+    tema = "&tema="+request.form["tema"]
     try:
-        response = requests.get(link+text+cor)
+        response = requests.get(link+text+cor+tema)
+        svg = response.content
+        svg2png(bytestring=svg,write_to='./static/images/wordcloud.png')
     except:
         return "Erro ao gerar wordcloud"
-    svg = response.content
-    svg2png(bytestring=svg,write_to='./static/images/wordcloud.png')
 
     return render_template("index.html")
         
