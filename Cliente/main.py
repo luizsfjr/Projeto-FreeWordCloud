@@ -17,8 +17,8 @@ def gerar():
     cor = "&cor="+request.form["cor"]
     tema = "&tema="+request.form["tema"]
     try:
-        response = requests.get(link+text+cor+tema)
-        svg = response.content
+        response = requests.get(link+text+cor+tema) #comunicação com outro sistema
+        svg = response.content # pega a resposta
         svg2png(bytestring=svg,write_to='./static/images/wordcloud.png')
     except:
         return "Erro ao gerar wordcloud"

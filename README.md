@@ -82,7 +82,12 @@ As seguintes ferramentas foram usadas na construção do projeto:
 ## Funcionalidades implementadas
   - Módulos de pré-processamento
   - Geração da nuvem de palavras
-  - Aplicação cliente 95% pronta
+  - Aplicações cliente e servidor 100% prontas
+  - Opções de estilização da nuvem de palavras, como background e tema.
   - Download da nuvem de palavras
-## Funcionalidades futuras
-  - Opções de estilização da nuvem de palavras como, fonte, tema etc.
+## Comunicação entre os sistemas
+  - Presente no arquivo main da parte do cliente, indicado pelos comentários nas linhas 20 e 21
+## Última entrega
+  - Inclusão de tratamento de erro
+  - Simplificação de código para maior legibilidade
+  - Inclusão de estilização da nuvem por tema
